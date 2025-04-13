@@ -46,6 +46,8 @@ img {
 .benefits-points,
 .quick-list,
 .quick-item-cont,
+.section-strategies,
+.strategies-title-cont,
 .strategies-list,
 .section-price,
 .price-cont,
@@ -55,6 +57,7 @@ img {
     display: flex;
     align-items: center;
 }
+/*footer*/
 
 .container {
     padding: 22px 145px;
@@ -73,7 +76,6 @@ img {
     line-height: 1.75; 
     color: var(--secondary-color);  
     margin-left: 16px;    
-    /* line-height: 93%; що це означає в фігмі?*/
 }
 
 .header-nav {
@@ -126,6 +128,8 @@ img {
     align-content: center;
     background-color: var(--btn-color);   
 }
+
+/*hero*/
 
 .section-hero .container {
     justify-content: center;
@@ -185,6 +189,8 @@ p.main-text {
     color: var(--btn-color);
 }
 
+/*Product for you*/
+
 .section-product .container {
     flex-direction: column;
     padding: 0 145px 50px 145px;
@@ -240,6 +246,8 @@ p.main-text {
     cursor: pointer;
 }
 
+/*benefits*/
+
 .section-benefits {
     padding: 50px 0 0 0;
 }
@@ -285,6 +293,8 @@ p.main-text {
     margin-bottom: 30px;
 }
 
+/*Quick & Easy Process*/
+
 .section-quick {
     padding-top: 144px;
     padding-bottom: 100px;
@@ -293,7 +303,6 @@ p.main-text {
 .section-quick .container {
     flex-direction: column;
     max-width: 916px;
-    /* align-items: center; */
     margin: 0 auto;
     padding: 0;
 }
@@ -339,15 +348,28 @@ p.main-text {
     margin-top: 50px;
 }
 
-.section-strategies .container {
-    padding-top: 0;
-    padding-bottom: 171px;
+/*Contents Strategies*/
+
+.section-strategies {
+    padding: 0 145px 171px 145px;
+    justify-content: center;
+}
+
+.section-strategies .container {  
+    max-width: 1110px; 
+    padding: 0; 
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.strategies-title-cont {
+    flex-direction: column;
+    align-self: flex-start;
 }
 
 .section-title.strategies-title {
     font-size: 34px;
+    align-self: flex-start;
 }
 
 .strategies-text {
@@ -358,6 +380,7 @@ p.main-text {
 
 .strategies-list {
     gap: 30px;
+    justify-content: center;
 }
 
 .strategies-item {
@@ -381,6 +404,8 @@ p.main-text {
 .section-subtitle.link {
     color: var(--btn-color);
 }
+
+/*Price Table*/
 
 .section-price .container {
     flex-direction: column;
@@ -476,8 +501,7 @@ p.main-text {
     font-size: 24px;
     line-height: 1.25;
     letter-spacing: 0em;
-    color: var(--btn-color);
-    
+    color: var(--btn-color);    
 }
 
 .per-month {
@@ -523,3 +547,6 @@ p.main-text {
     background-color: var(--light-color);
     color: var(--btn-color);
 }
+
+/*What Clients Say*/
+
