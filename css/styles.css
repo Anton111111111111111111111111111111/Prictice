@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box; 
-    color: #22343d;    /*без цього весь текст крім лого кольору #551A8B*/
 }
 :root {
     --primary-color: #22343d;
     --secondary-color: #173a56;
     --light-color: #ffffff;
+    --btn-color: #02897a;
 }
 h1, h2, h3, h4, h5, h6, p {	margin: 0;}
 
@@ -14,7 +14,7 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.62;
-    color: #22343d;
+    color: var(--primary-color);
 }
 
 ul, ol {
@@ -22,10 +22,17 @@ ul, ol {
 	padding: 0;
     list-style-type: none; }
 
-a { text-decoration: none; }
-img {display: block;}
+a { text-decoration: none; 
+    color: currentColor; /*обнулення стандартного кольору посилання*/
+}
+img {
+    display: block;
+    /* max-width: 100%;
+    height: auto; */
+}
 
 .container, 
+.container-nav,
 .header-nav, 
 .logo, 
 .nav-list, 
@@ -36,9 +43,16 @@ img {display: block;}
 .section-hero-img,
 .section-hero-buttons,
 .product-list,
-.benefits-points {
+.benefits-points,
+.quick-list,
+.quick-item-cont,
+.strategies-list,
+.section-price,
+.price-cont,
+.for-price-list,
+.per-month-cont,
+.dollar-per-month {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -46,6 +60,10 @@ img {display: block;}
     padding: 22px 145px;
     width: 100%;
     justify-content: space-between;
+}
+
+.container-nav {
+    justify-items: space-between;
 }
 
 .logo {
@@ -58,8 +76,9 @@ img {display: block;}
     /* line-height: 93%; що це означає в фігмі?*/
 }
 
-.header-logo-cont {
-    margin-right: 237px;
+.header-nav {
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 
 .nav-item {
@@ -105,7 +124,7 @@ img {display: block;}
     height: 42px;
     border-radius: 4px;
     align-content: center;
-    background-color: #02897A;   
+    background-color: var(--btn-color);   
 }
 
 .section-hero .container {
@@ -124,7 +143,7 @@ img {display: block;}
     font-weight: 700;
     font-size: 40px;
     line-height: 1.5;
-    color: #22343d;            
+    color: var(--primary-color);            
 }
 
 p.main-text {
@@ -141,7 +160,7 @@ p.main-text {
     width: 178px;
     height: 53px;
     border-radius: 4px;
-    background-color: #02897A;
+    background-color: var(--btn-color);
     color: var(--light-color);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -163,7 +182,7 @@ p.main-text {
     font-weight: 600;
     font-size: 16px;
     text-decoration-skip-ink: none;
-    color: #02897a;
+    color: var(--btn-color);
 }
 
 .section-product .container {
@@ -177,25 +196,26 @@ p.main-text {
     font-size: 32px;
     line-height: 1.5;
     text-align: center;
-    color: #22343d;
+    color: var(--primary-color);
 }
 
 .product-list {
     gap: 30px;
     margin-top: 50px;
+    max-width: 1110px;
     /* justify-content: center; */
 }
 
 .product-item {
-    width: calc((100%-30px*3)/4);
+    width: calc((100% - 30px * 3) / 4);
 }
 
 .section-subtitle {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 22px;
-    color: #22343d;
-    margin-top: 18.11px;
+    color: var(--primary-color);
+    margin-top: 18px;
 }
 
 .product-item p {
@@ -206,7 +226,7 @@ p.main-text {
     width: 175px;
     height: 53px;
     border-radius: 4px;
-    background-color: #02897A;
+    background-color: var(--btn-color);
     color: var(--light-color);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -221,7 +241,7 @@ p.main-text {
 }
 
 .section-benefits {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 .container-benefits {
@@ -231,6 +251,7 @@ p.main-text {
 .benefits-list .container {
     justify-content: center;
     gap: 80px;
+    padding-bottom: 0;
 }
 
 .subsubtitle, .benefits-pre {
@@ -262,4 +283,243 @@ p.main-text {
 .points {
     margin-right: 30.06px;
     margin-bottom: 30px;
+}
+
+.section-quick {
+    padding-top: 144px;
+    padding-bottom: 100px;
+}
+
+.section-quick .container {
+    flex-direction: column;
+    max-width: 916px;
+    /* align-items: center; */
+    margin: 0 auto;
+    padding: 0;
+}
+
+.quick-title-and-text {
+    display: flex;
+    flex-direction: column;
+    width: 542px;
+    text-align: center;
+    gap: 25px;
+}
+
+.quick-list {
+    padding-top: 40px;
+    flex-wrap: wrap;
+    gap: 25px 91px;
+}
+
+.quick-item-cont {
+    width: 408px;
+    gap: 20px;
+}
+
+.quick-item-text-cont {
+    width: 281px;
+    height: 50.1px;
+    border: 0px solid var(--light-color);
+    border-radius: 25px;
+    text-align: center;
+    padding: 13px 0;
+    fill: var(--light-color);
+    box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+}
+
+.quick-btn {
+    border-radius: 4px;
+    border: 0;
+    width: 216px;
+    height: 53px;
+    background: var(--btn-color);
+    color: var(--light-color);
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.section-strategies .container {
+    padding-top: 0;
+    padding-bottom: 171px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-title.strategies-title {
+    font-size: 34px;
+}
+
+.strategies-text {
+    width: 465px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.strategies-list {
+    gap: 30px;
+}
+
+.strategies-item {
+    width: 350px;
+}
+
+.strategies-item-text {
+    line-height: 1.75;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.strategies-item .section-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.67;
+    margin-top: 12px;
+    margin-left: 24px;
+}
+
+.section-subtitle.link {
+    color: var(--btn-color);
+}
+
+.section-price .container {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.section-title.price-title {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.price-text {
+    font-weight: 500;
+}
+
+.price-cont {
+    margin-top: 40px;
+    gap: 72px;
+}
+
+.price-item {
+    border-radius: 8px;
+    width: 322px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+    background:var(--light-color);
+    text-align: center;
+    padding: 32px 0;
+}
+
+.price-item.green {
+    background: var(--btn-color);
+    color: var(--light-color);
+}
+
+.price-item .section-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.67;
+    margin-top: 0;
+}
+
+.green .section-subtitle {
+    color: var(--light-color);
+}
+
+.green .price-description {
+    color: var(--light-color);
+}
+
+.price-green .price-value {
+    color: var(--light-color);
+}
+
+.price-green .dollar {
+    color: var(--light-color);
+}
+
+.price-green .per-month {
+    color: #e0e0e0;
+}
+
+.price-description {
+    line-height: 2.5;
+    margin-top: 8px;
+}
+
+.per-month-cont {
+    width: 157px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 7px;
+}
+
+.per-month-cont.ten {
+    width: 187px;
+}
+
+.price-value {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 1.32;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--btn-color);
+}
+
+.dollar {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    color: var(--btn-color);
+    
+}
+
+.per-month {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.01em;
+    color: #afafaf;
+}
+
+.for-price-list {
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.37;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+.dollar-per-month {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.order-now-btn {
+    width: 139px;
+    height: 44px;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 30px;
+    background-color: var(--btn-color);
+    color: var(--light-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.green .order-now-btn {
+    background-color: var(--light-color);
+    color: var(--btn-color);
 }
