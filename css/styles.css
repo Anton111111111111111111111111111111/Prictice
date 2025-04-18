@@ -68,7 +68,8 @@ button {
 .logo-socials,
 .socials-list,
 .footer-nav-list,
-.footer-nav-item {
+.footer-nav-item,
+.footer-item-list {
     display: flex;
     align-items: center;
 }
@@ -675,16 +676,17 @@ footer {
 footer .container {
     width: 1110px;
     padding: 0;
-    justify-content:center;
+    /* justify-content:center; */
     align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .logo-socials {
     flex-direction: column;
     margin-right: 146px;
-    /* justify-content: flex-start; */
+    justify-content: flex-start;
 }
 
 .logo-socials .logo-cont {
@@ -702,21 +704,44 @@ footer .container {
 
 .footer-nav-item {
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer-nav-title{
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 8px;
 }
 
+.footer-item-list{
+    flex-direction: column;
+    align-items:flex-start;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.19;
+}
 
+.footer-nav-item.first {
+    margin-right: 129px;
+}
 
+.footer-nav-item.second{
+    margin-right: 83px;
+}
 
+.footer-nav-item.third{
+    width: 325px;
+}
 
+.footer-nav-title.third{
+    width: 280px;
+}
 
-
-
-
+.button-start.footer{
+    width: 131px;
+    height: 39px;
+}
 
 
 
