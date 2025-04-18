@@ -51,6 +51,7 @@ button {
 .section-hero-img,
 .section-hero-buttons,
 .product-list,
+.benefits-list,
 .benefits-points,
 .quick-list,
 .quick-item-cont,
@@ -169,6 +170,7 @@ header .container {
 
 .section-hero .container {
     justify-content: center;
+    padding-bottom: 80px;
 }
 
 .container-title {
@@ -280,10 +282,16 @@ p.main-text {
     width: 486px;
 }
 
-.benefits-list .container {
+.benefits-list {
+    flex-direction: column;
+    gap: 100px;
+}
+
+.benefits-item .container {
     justify-content: center;
     gap: 80px;
     padding-bottom: 0;
+    padding-top: 0;
 }
 
 .subsubtitle, .benefits-pre {
@@ -298,9 +306,13 @@ p.main-text {
     font-size: 32px;
 }
 
-.container-benefits p {
+.benefits-sublist p {
     margin-top: 12px;
     margin-bottom: 25px;
+}
+
+.benefits-text {
+    margin-bottom: 30px;
 }
 
 .benefits-points {
@@ -408,6 +420,9 @@ p.main-text {
 
 .strategies-item {
     width: 350px;
+    /* border: 1px solid rgba(0, 0, 0, 0.15); */
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
 }
 
 .strategies-item-text {
@@ -422,6 +437,7 @@ p.main-text {
     line-height: 1.67;
     margin-top: 12px;
     margin-left: 24px;
+    margin-bottom: 40px;
 }
 
 .section-subtitle.link {
@@ -599,6 +615,7 @@ p.main-text {
     padding: 28px 26px;
     border: 1px solid #dedede;
     border-radius: 5px;
+    box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
 }
 
 .Clients-item-text {
@@ -743,15 +760,27 @@ footer .container {
     height: 39px;
 }
 
-
-
-
-
-
-
-
-
 .final-text{
     text-align: center;
     line-height: 1.87;
+}
+
+.page-title.pricing{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.section-title.pricing {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.price-cont.pricing{
+    margin-top: 50px;
+}
+
+.price-value.pricing {
+    font-family: "Poppins", sans-serif;
 }
