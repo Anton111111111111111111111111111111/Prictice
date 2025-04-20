@@ -70,7 +70,16 @@ button {
 .socials-list,
 .footer-nav-list,
 .footer-nav-item,
-.footer-item-list {
+.footer-item-list,
+.section-clients,
+.clients-list,
+.choose,
+.choose-list,
+.choose-list-item,
+.work,
+.work-list,
+.work-item,
+.work-item-cont {
     display: flex;
     align-items: center;
 }
@@ -783,4 +792,118 @@ footer .container {
 
 .price-value.pricing {
     font-family: "Poppins", sans-serif;
+}
+ /*Page 2*/
+
+.section-clients{
+    flex-direction: column;
+    padding: 100px 0 117px 0;
+}
+
+.section-clients .page-title {
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    margin-top: 0;
+    gap: 64px;
+}
+
+/* .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+} */
+
+.choose {
+    flex-direction: column;
+    padding: 24px 0 68px 0;
+    background: #f5f5f5;
+}
+
+.choose .section-title {
+    margin-bottom: 50px;
+}
+
+.choose-list {
+    max-width: 1110px;
+    gap: 30px;
+}
+
+.choose-list-item {
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    padding: 33px 38px;
+    width: 350px;
+    height: 305px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose-list-item-img {
+    margin-bottom: 32px;
+}
+
+.choose-list-title {
+    margin-bottom: 16px;
+}
+
+.choose-list-text {
+    line-height: 1.69;
+    letter-spacing: 0.01em;
+    width: 275px;
+    text-align: center;
+}
+
+.work {
+    padding: 100px 0 115px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work .section-title {
+    margin-bottom: 73px;
+}
+
+.work-list {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 78px;
+}
+
+.work-item {
+    width: 1027px;
+    gap: 88px;
+}
+
+.work-item-cont {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.work-item-step {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.work-item-cont .section-subtitle {
+    font-size: 24px;
+}
+
+.work-item-text {
+    line-height: 1.75;
+}
+
+.work .button-start {
+    border-radius: 8px;
+    width: 224px;
+    height: 44px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
 }
