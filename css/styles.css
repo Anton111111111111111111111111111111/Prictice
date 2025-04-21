@@ -79,7 +79,10 @@ button {
 .work,
 .work-list,
 .work-item,
-.work-item-cont {
+.work-item-cont,
+.section-thousand,
+.thousand-list,
+.thousand-item {
     display: flex;
     align-items: center;
 }
@@ -601,7 +604,7 @@ p.main-text {
 .section-clients .container {
     flex-direction: column;
     padding-top: 0;
-    padding-bottom: 100px;
+    padding-bottom: 0;
 }
 
 .clients-text {
@@ -797,7 +800,8 @@ footer .container {
 
 .section-clients{
     flex-direction: column;
-    padding: 100px 0 117px 0;
+    margin-bottom: 100px;
+    padding: 0;
 }
 
 .section-clients .page-title {
@@ -808,15 +812,6 @@ footer .container {
     margin-top: 0;
     gap: 64px;
 }
-
-/* .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-} */
 
 .choose {
     flex-direction: column;
@@ -906,4 +901,70 @@ footer .container {
     font-weight: 600;
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
+}
+
+.section-thousand {
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0 45px 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
+}
+
+.section-thousand .section-title {
+    width: 537px;
+    margin-bottom: 93px;
+}
+
+.thousand-list {
+    gap: 227px;
+}
+
+.thousand-item {
+    flex-direction: column;
+    align-items: center;
+}
+
+.thousand-item-icon {
+    width: 149px;
+    height: 149px;
+    border-radius: 50%;
+    background: #ffefef;
+    padding: 44px;
+    margin-bottom: 27px;
+}
+
+.thousand-item-icon.blue {
+    background: #F2F6FF;
+}
+
+.icon {
+    display: inline-block;
+    /* width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor; */
+}
+
+.thousand-subtitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+}
+
+.thousand-item-text {
+    font-size: 18px;
+    line-height: 1.78;
+}
+
+.thousand-item-text.find {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.section-join.page-customers {
+    padding: 150px 0;
 }
