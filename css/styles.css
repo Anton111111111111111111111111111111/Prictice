@@ -232,6 +232,8 @@ p.main-text {
     font-size: 16px;
     text-decoration-skip-ink: none;
     color: var(--btn-color);
+    height: 40px;
+    padding-top: 4px;
 }
 
 /*Product for you*/
@@ -375,6 +377,14 @@ p.main-text {
 
 .points.yellow {
     background-color: #FF9900;
+}
+
+.points.red{
+    background-color: #F03E3D;
+}
+
+.points.blue{
+    background-color: #4D8DFF;
 }
 
 /*Quick & Easy Process*/
@@ -649,6 +659,7 @@ p.main-text {
     line-height: 1.75;
     letter-spacing: 0.01em;
     margin-top: 10px;
+    margin-bottom: 40px;
     width: 537px;
     text-align: center;
 }
@@ -667,14 +678,10 @@ p.main-text {
 }
 
 .Clients-item-text {
-    margin-top: 16px;
+    margin: 16px 0;
     line-height: 1.75;
     letter-spacing: 0.01em;
     color: #737373;
-}
-
-.Clients-item-cont {
-    margin-top: 16px;
 }
 
 .Clients-item-cont img {
