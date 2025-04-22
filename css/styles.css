@@ -269,6 +269,19 @@ p.main-text {
     justify-content: center;
 }
 
+.product-icon.design{
+    background-color: #4D8DFF;
+}
+
+.product-icon.heart{
+    background-color: #740A76;
+}
+
+.product-icon.clock{
+    background-color: #F03E3D;
+}
+
+
 .section-subtitle {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -997,5 +1010,5 @@ footer .container {
 }
 
 .section-join.page-customers {
-    padding: 150px 0;
+    padding: 150px 0 0 0;
 }
