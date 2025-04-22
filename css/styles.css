@@ -253,10 +253,12 @@ p.main-text {
     gap: 30px;
     margin-top: 50px;
     max-width: 1110px;
+    align-items: flex-start;
 }
 
 .product-item {
     width: calc((100% - 30px * 3) / 4);
+    padding-top: 0;
 }
 
 .product-icon {
@@ -360,8 +362,19 @@ p.main-text {
 }
 
 .points {
-    margin-right: 30.06px;
+    width: 35px;
+    height: 35px;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
     margin-bottom: 30px;
+    flex-shrink: 0;
+}
+
+.points.yellow {
+    background-color: #FF9900;
 }
 
 /*Quick & Easy Process*/
@@ -739,6 +752,7 @@ footer .container {
     flex-direction: column;
     margin-right: 146px;
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .logo-socials .logo-cont {
@@ -748,6 +762,16 @@ footer .container {
 
 .socials-list {
     gap: 16px;
+}
+
+.socials-link{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDFFFC;
 }
 
 .footer-nav-list {
