@@ -173,13 +173,21 @@ header .container {
     font-size: 16px;
     padding-top: auto;
     padding-bottom: auto;
-    color: var(--light-color);/*правило не працює*/
+    color: var(--light-color);
     text-align: center;
     width: 113px;
     height: 42px;
     border-radius: 4px;
     align-content: center;
     background-color: var(--btn-color);   
+}
+
+.sign-link {
+    display: inline-block;
+    width: 105px;
+    height: 42px;
+    align-content: center;
+    justify-content: center;
 }
 
 /*hero*/
@@ -436,17 +444,6 @@ p.main-text {
     box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
 }
 
-/* .btn-main {
-    background: var(--btn-color);
-    color: var(--light-color);
-    border-radius: 4px;
-    font-weight: 700;
-}
-
-.btn-white {
-
-} */
-
 .quick-btn {
     border-radius: 4px;
     width: 216px;
@@ -494,7 +491,6 @@ p.main-text {
 
 .strategies-item {
     width: 350px;
-    /* border: 1px solid rgba(0, 0, 0, 0.15); */
     border-radius: 8px;
     box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
 }
@@ -523,7 +519,7 @@ p.main-text {
 .section-price .container {
     flex-direction: column;
     padding-top: 0;
-    padding-bottom: 150px;
+    padding-bottom: 0;
 }
 
 .section-title.price-title {
@@ -752,7 +748,6 @@ p.main-text {
 }
 
 .join-img {
-    /* width: 351px;  */
     height: 100%;
 }
 
@@ -763,7 +758,6 @@ footer {
 footer .container {
     width: 1110px;
     padding: 0;
-    /* justify-content:center; */
     align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
@@ -886,6 +880,10 @@ footer .container {
     line-height: 1.875;
 }
 
+.section-price.pricing {
+    padding-bottom: 150px;
+}
+
 .page-title.pricing{
     margin-top: 50px;
     font-weight: 600;
@@ -955,23 +953,9 @@ footer .container {
     display: flex;
     align-items: center;
     justify-content: center;
-
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     margin-bottom: 32px;
 }
-
-/* .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-} */
-/* 
-.customers-choose-icon .arrow{
-    fill: #fff;
-} */
 
 .customers-choose-icon.design {
     background: #4D8DFF;
