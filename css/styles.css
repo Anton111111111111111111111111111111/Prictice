@@ -808,6 +808,10 @@ p.main-text {
 
 /*Price Table*/
 
+.section-price.page-one {
+  padding-top: 100px;
+}
+
 .section-price .container {
   flex-direction: column;
   padding: 61px 0 100px 0;
@@ -948,6 +952,12 @@ p.main-text {
   color: var(--btn-color);
 }
 
+@media screen and (min-width: 768px) {
+  .section-price.page-one {
+    padding-top: 0;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .section-price .container {
     padding: 0;
@@ -973,9 +983,12 @@ p.main-text {
 
 /*What Clients Say*/
 
+.section-clients {
+  padding-top: 100px;
+}
+
 .section-clients .container {
   flex-direction: column;
-  padding-top: 0;
 }
 
 .section-title.clients {
