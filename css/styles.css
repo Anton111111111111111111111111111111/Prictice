@@ -1631,6 +1631,11 @@ footer .container {
   padding: 50px 28px 77px 28px;
 }
 
+.our-clients-wrap {
+  width: 355px;
+  margin: 0 auto;
+}
+
 .section-our-clients .page-title {
   text-align: center;
   margin-bottom: 42px;
@@ -1654,7 +1659,6 @@ footer .container {
 
   .our-clients-wrap {
     width: 410px;
-    margin: 0 auto;
   }
 
   .section-our-clients .page-title {
